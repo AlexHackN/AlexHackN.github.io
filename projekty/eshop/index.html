@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <style>
+        .con {
+            position: relative;
+            width: 100%;
+        }
+        
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: width 4s, height 4s ease-in-out;
+            background-color: #ffaa5a;
+        }
+        
+        .con:hover .overlay {
+            opacity: 1;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .text {
+            color: #fff;
+            font-size: 50px;
+            font-family: 'Poppins', 'sans serif';
+            font-weight: normal;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="">
+                        <img src="img/A.png" width="100px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Domov</a></li>
+                        <li><a href="kategorie.html">Kategórie</a></li>
+                        <li><a href="">Obchodné podmienky</a></li>
+                        <li><a href="about.html">O nás</a></li>
+                        <li><a href="kontakty.html">Kontakty</a></li>
+                    </ul>
+                </nav>
+                <img src="img/bag.png" width="30px" height="30px">
+                <img src="img/list.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Dajte Vášmu životu<br> Nový štýl!</h1>
+                    <p>Success is not about greatness. It is about consistency.<br> Consistent hard work gains success. Greatness will come.</p>
+                    <a href="kategorie.html" class="btn">Objaviť ihneď &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/top.jpg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- kategorie ------>
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <!----tricka----->
+                    <div class="con">
+                        <a href="tricka.html">
+                            <img src="img/cat-1.jpg" alt="Tricka" class="image">
+                            <div class="overlay">
+                                <div class="text">Tričká</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!----mikiny----->
+                    <div class="con">
+                        <a href="mikiny.html">
+                            <img src="img/cat-2.jpg" alt="Mikiny" class="image">
+                            <div class="overlay">
+                                <div class="text">Mikiny</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!----rifle----->
+                    <div class="con">
+                        <a href="rifle.html">
+                            <img src="img/cat-3.jpg" alt="Rifle" class="image">
+                            <div class="overlay">
+                                <div class="text">Rifle</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!----topanky----->
+                    <div class="con">
+                        <a href="obuv.html">
+                            <img src="img/cat-4.jpg" alt="Topánky" class="image">
+                            <div class="overlay">
+                                <div class="text">Topánky</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!----bundy----->
+                    <div class="con">
+                        <a href="bundy.html">
+                            <img src="img/cat-5.jpg" alt="Bundy" class="image">
+                            <div class="overlay">
+                                <div class="text">Bundy</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!----doplnky----->
+                    <div class="con">
+                        <a href="doplnky.html">
+                            <img src="img/cat-6.jpg" alt="Doplnky" class="image">
+                            <div class="overlay">
+                                <div class="text">Doplnky</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- produkty ------>
+
+    <div class="small-container">
+        <h2 class="title">Obľúbené</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/t-shirt-4.jpg">
+                <h4>Biele tričko Adidas</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>19,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/hoodie-10.jpg">
+                <h4>Čierna mikina Survive</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>32,80€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jacket-3.jpg">
+                <h4>Extra zateplená kožená bunda GUCCI</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>560,80€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/shoes-2.jpg">
+                <h4>Nike Air Force Ultra B&W Edition</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>289,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/acc-12.jpg">
+                <h4>Hodinky TISSOT Edition Red</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>790,64€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jeans-4.jpg">
+                <h4>Hollister rifle dámske</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>69,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/hoodie-9.jpg">
+                <h4>Mikina ITalica - žltá</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>39,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jeans-3.jpg">
+                <h4>Rifle pánske</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>29,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+
+        </div>
+
+        <!----Najnovsie produkty----->
+
+        <h2 class="title">Najnovšie</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/acc-20.jpg">
+                <h4>Set kabelka + okuliare GUCCI</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>880,41€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/t-shirt-7.jpg">
+                <h4>Čierne tričko YY</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>49,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jacket-10.jpg">
+                <h4>Rifľová bunda Zara</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>99,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/hoodie-12.jpg">
+                <h4>Rúžová mikina Supreme</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>389,99€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jacket-5.jpg">
+                <h4>Košeľová bunda</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>65,70€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/shoes-1.jpg">
+                <h4>Nike Run&Jump 200</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>203,11€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/hoodie-11.jpg">
+                <h4>Čierna mikina GHFGD</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>69,98€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+            <div class="col-4">
+                <img src="img/jeans-2.jpg">
+                <h4>Rifle dámske s nápismi</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>65,89€</p>
+                <a href="" class="btn-2">Kúpiť</a>
+            </div>
+        </div>
+
+        <!---Reklama/Banner---->
+
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/13.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Získajte ekluzívnu zľavu na Apple.com</p>
+                        <h1>Iphone 13 Pro Max</h1>
+                        <small>Profesionálny telefón. S neskutočným výkonom a 120 Hz 6,7" Super Retina XDR displejom</small>
+                        <br>
+                        <a href="https://www.apple.com/sk/iphone-13-pro/" class="btn">Kúpiť teraz &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Značky/Partneri---->
+
+    <div class="brands">
+        <h2 class="title">Partneri</h2>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <a href="https://www.nike.com/sk/">
+                        <img src="img/nike.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.supremenewyork.com/index">
+                        <img src="img/logo-3.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.gucci.com">
+                        <img src="img/logo-2.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.adidas.com/us">
+                        <img src="img/adidas.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.apple.com">
+                        <img src="img/apple.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----Pätička--->
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Stiahnite si našu apku</h3>
+                    <p>Stiahnite si aplikáciu do vášho Android alebo ios smartfónu</p>
+                    <div class="app-logo">
+                        <a href="">
+                            <img src="img/play-store.png">
+                        </a>
+                        <a href="">
+                            <img src="img/app-store.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-cont">
+                        <h3>Navštívte nás</h3>
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe width="400" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Metodova%206,%20821%2008%20Ru%C5%BEinov&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 250px;
+                                        width: 400px;
+                                    }
+                                </style><a href="https://www.embedgooglemap.net">google maps code for wordpress</a>
+                                <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 250px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Sledujte nás</h3>
+                    <div class="wrapper">
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </div>
+                        <div class="wrapper-2">
+                            <input type="checkbox" id="click">
+                            <label class="btn-a" for="click">Odber</label>
+                            <div class="field">
+                                <input type="text" placeholder="Emailová adresa">
+                                <label for="click" class="btn-b">Odoberať</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p class="copyright">Všetky práva vyhradené - Copyright 2022 - <a href="https://alexhackn.github.io/projekty/portfolio/">Alex Novák</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
