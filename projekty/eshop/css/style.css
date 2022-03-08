@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Poppins', sans-serif;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -66,11 +64,9 @@ p{
     border-radius: 30px;
     transition: background 0.5s;
 }
-
 .btn:hover{
     background: #563434;
 }
-
 .btn-2{
     display: inline-block;
     background: #4bb7ff;
@@ -83,7 +79,6 @@ p{
 .btn-2:hover{
     background: #ffaa5a;
 }
-
 .header{
     background: radial-gradient(#fff,#aedafd);
 }
@@ -105,7 +100,6 @@ p{
     height: auto;
 
 }
-
 .small-container{
     position: relative;
     max-width: 1280px;
@@ -113,7 +107,6 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
-
 .col-4{
     flex-basis: 25%;
     padding: 10px;
@@ -126,7 +119,6 @@ p{
     display: block;
     height: auto;
 }
-
 .title{
     text-align: center;
     margin: 0 auto 80px;
@@ -148,7 +140,6 @@ p{
 h4{
     color: #555;
     font-weight: normal;
-
 }
 .col-4 p{
     font-size: 14px;
@@ -170,7 +161,6 @@ h4{
 small{
     color: #555;
 }
-
 .brands{
     margin: 100px auto;
 }
@@ -185,7 +175,6 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-
 .footer{
     background: #000;
     font-size: 14px;
@@ -221,11 +210,9 @@ small{
     line-height: 2.5;
     margin-right: 40px;
 }
-
 .footer-col-3 a{
     color: #8a8a8a;
 }
-
 .wrapper .button{
     display: inline-block;
     text-align: center;
@@ -261,7 +248,6 @@ small{
 .wrapper .button:nth-child(2):hover .icon{
     background: #E1306C;
 }
-
 .wrapper .button .icon i{
     font-size: 25px;
     line-height: 60px;
@@ -283,7 +269,6 @@ small{
 .wrapper .button:nth-child(2) span{
     color: #E1306C;
 }
-
 .wrapper-2{
     height: 60px;
     width: 300px;
@@ -366,7 +351,6 @@ small{
 .wrapper-2 #click{
     display: none;
 }
-
 ul{
     list-style-type: none;
 }
@@ -376,7 +360,6 @@ ul{
 .app-logo img{
     width: 140px;
 }
-
 .footer-cont{
     margin-left: 100px;
     text-align: left;
@@ -387,7 +370,6 @@ ul{
     width: 15px;
     padding-right: 5px;
 }
-
 .footer hr{
     border: none;
     background: #b5b5b5;
@@ -400,7 +382,6 @@ ul{
 .copyright a{
     color: #8a8a8a;
 }
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;
@@ -429,7 +410,6 @@ ul{
         cursor: pointer;
     }
 }
-
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
